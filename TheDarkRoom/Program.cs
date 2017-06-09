@@ -10,7 +10,9 @@ namespace TheDarkRoom
     {
         static void Main(string[] args)
         {
+            Character player = new Character("Humphrey Wilkins");
 
+            Console.WriteLine(player.name);
         }
     }
 }

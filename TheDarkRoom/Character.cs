@@ -8,11 +8,11 @@ namespace TheDarkRoom
 {
     class Character
     {
-        private string name;
+        public string name;
         private string className;
         private int age;
 
-        public void Character(string name)
+        public Character(string name)
         {
             this.name = name;
         }
