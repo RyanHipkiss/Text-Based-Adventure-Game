@@ -6,25 +6,29 @@ using System.Threading.Tasks;
 
 namespace TheDarkRoom
 {
-    class Character
+    class Character : PlayerCharacter
     {
-        public string name;
-        private string className;
-        private int age;
+        private string name;
+        private bool alive = true;
 
         public Character(string name)
         {
             this.name = name;
         }
 
-        public void setClass(string className)
+        public string getName()
         {
-            this.className = className;
+            return this.name;
         }
 
-        public void setAge(int age)
+        public bool isAlive()
         {
-            this.age = age;
+            return this.alive;
+        }
+
+        public void killPlayer()
+        {
+            this.alive = false;
         }
     }
 }

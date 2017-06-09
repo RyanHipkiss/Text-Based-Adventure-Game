@@ -10,9 +10,10 @@ namespace TheDarkRoom
     {
         static void Main(string[] args)
         {
-            Character player = new Character("Humphrey Wilkins");
+            Game game = new Game();
+            PlayerCharacter character = GameFactory.create("character");
 
-            Console.WriteLine(player.name);
+            Console.WriteLine(character.getName());
         }
     }
 }
