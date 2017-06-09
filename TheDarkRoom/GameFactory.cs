@@ -15,6 +15,11 @@ namespace TheDarkRoom
 
             string name = Console.ReadLine();
 
+            if(String.IsNullOrEmpty(name))
+            {
+                GameFactory.create(type);
+            }
+
             return new Character(name);
         }
     }

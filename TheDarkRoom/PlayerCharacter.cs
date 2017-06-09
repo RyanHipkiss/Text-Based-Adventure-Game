@@ -9,5 +9,7 @@ namespace TheDarkRoom
     interface PlayerCharacter
     {
         string getName();
+        bool isAlive();
+        void killPlayer();
     }
 }
